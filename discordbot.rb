@@ -4,7 +4,7 @@ bot = Discordrb::Bot.new token:"YOUR BOT TOKEN", client_id: #your client id
 bot.ready do |_|
   bot.dnd
   bot.profile.name = "Oswin's ruby bot"
-  end
+end
 
 bot.message(with_text: '!ping') do |event|
   event.respond "Pong #{event.user.name}"
